@@ -16,6 +16,4 @@ hs_err_pid*
 /.classpath
 /.settings
 /.settings/*
-data/maxent.ser
-*.bin
 
