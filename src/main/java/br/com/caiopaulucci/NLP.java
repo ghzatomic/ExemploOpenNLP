@@ -1,4 +1,4 @@
-package br.com.jonathan;
+package br.com.caiopaulucci;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
@@ -24,7 +24,7 @@ import opennlp.tools.util.PlainTextByLineStream;
 import opennlp.tools.util.Span;
 import opennlp.tools.util.TrainingParameters;
 
-public class Main{
+public class NLP{
 
 	private static final String CORPUS = "<START:Pessoa> Marcelo <END> foi trabalhar em <START:Cidade> Piratininga <END>";
 	private static final String TEXT = "Juliana trabalha em Ubatuba";
