@@ -26,8 +26,13 @@ import opennlp.tools.util.TrainingParameters;
 
 public class NLP{
 
-	private static final String CORPUS = "<START:Pessoa> Marcelo <END> foi trabalhar em <START:Cidade> Piratininga <END>";
-	private static final String TEXT = "Juliana trabalha em Ubatuba";
+	private static final String CORPUS = "<START:Pessoa> Marcelo <END> foi trabalhar em <START:Cidade> Piratininga <END> "+System.lineSeparator()+""
+			+ "<START:Pessoa> Caio <END> foi estudar em <START:Cidade> Dois Córregos <END>"+System.lineSeparator()+""
+			+ "Era uma vez um menino chamado <START:Pessoa> Caio <END> que foi em <START:Cidade> São Paulo <END> estudar"+System.lineSeparator()+""
+			+ "Um dia vou em <START:Cidade> São Paulo <END> comprar roupas "+System.lineSeparator()+""
+			+ "<START:Pessoa> Pedro <END> gosta de festas em <START:Cidade> Barretos <END>";
+	//private static final String TEXT = "Um amigo meu foi em Bauru mas nao sabia pegar onibus";
+	private static final String TEXT = "Um amigo chamado Jose foi em Bauru mas nao sabia pegar onibus";
 	private static final String MODEL_TOKENIZER = "data/pt-token.bin";
 	private static final Integer ITERATION = 100;
 	private static final Integer CUTOFF = 0;
